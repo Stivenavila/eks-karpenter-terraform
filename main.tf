@@ -65,10 +65,10 @@ module "eks" {
   cluster_version      = var.eks_cluster_version
   cluster_support_type = var.eks_support_type
   node_instance_types  = var.eks_node_instance_types
-  node_desired_size   = var.eks_node_desired_size
-  node_min_size       = var.eks_node_min_size
-  node_max_size       = var.eks_node_max_size
-  node_disk_size      = var.eks_node_disk_size
+  node_desired_size    = var.eks_node_desired_size
+  node_min_size        = var.eks_node_min_size
+  node_max_size        = var.eks_node_max_size
+  node_disk_size       = var.eks_node_disk_size
 
   # Compute mode derivado (fargate <-> ec2)
   enable_ec2_nodes          = local.enable_ec2_nodes
